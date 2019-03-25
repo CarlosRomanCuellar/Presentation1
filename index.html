@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fr">
+    <head>
+        <title>Presentation</title>
+        <meta name="description" content="A summary of the html & css book">
+        <meta http-equiv="author" content="Carlos Roman">
+        <meta charset="UTF-8">
+        
+        <link href="css/stylepresentation.css" type="text/css" rel="stylesheet"> 
+        <!--<style type="text/css">
+           
+            .borderimg {
+                border: 10px solid transparent;
+                padding: 0px;
+                -webkit-border-image: url(images/border.png) 20% round; /* Safari 3.1-5 */
+                -o-border-image: url(images/border.png) 20% round; /* Opera 11-12.1 */
+                border-image: url(images/border.png) 20% round;
+            }
+        </style>-->
+        
+    </head>
+    <body>
+
+        
+
+        <nav >
+            <ul class="navback">
+                <li class="nav1"><a class="lia" href="#chapter1">Structure</a></li>
+                <li class="nav1"><a class="lia" href="#chapter2">Text</a></li>
+                <li class="nav1"><a class="lia" href="#chapter3">Lists</a></li>
+                <li class="nav1"><a class="lia" href="#chapter4">Links</a></li>
+                <li class="nav1"><a class="lia" href="#chapter5">Images</a></li>
+                <li class="nav1"><a class="lia" href="#chapter6">Tables</a></li>
+                <li class="nav1"><a class="lia" href="#chapter7">Forms</a></li>
+                <li class="nav1"><a class="lia" href="#chapter8">Markup</a></li>
+                <li class="nav1"><a class="lia" href="#chapter9">video & audio</a></li>
+            </ul>
+        </nav>
+
+        <h1><abbr title="Hyper Text Markup Language">HTML</abbr></h1>
+        
+        
+        <article id="chapter1">
+            <h2>Structure</h2>
+                <p>
+                    HTML pages are domuments that  use tags (also called elements), this tags usually come in pairs to show when an element start and when it ends <br>
+                    the openning one can have attr             
+                    
+                    
+                    
+                    ibutes that can make the element show or behave one way or another, this attributes require a name and a value.
+                </p>
+                <p>
+                    This tags act like containers that tell you about the information between their opening and closing tags. Examples of this are the html, head and body tags,<br>
+                    The html tag indicates that everything inside is HTML code. The head tag contains information of the page and most of this is not show in the browser<br> window.
+                    The body tag indicates that all between the opening and closing tags is what is going to appear in the browsers window. 
+                </p>
+        </article>
+
+        <hr>
+
+        <article id="chapter2">
+            <h2>Text</h2>
+            <p>
+                In HTML exist the headings, this are represent by the tags <strong>h1, h2, h3, h4, h5 and h6 </strong> and are usually use for titles ans subtitles. 
+                An example of h1 <br> 
+                is the one above that says HTML. <br>
+                The headings are often shown in bold by default but this can be modified.
+            </p>
+
+            <p>The tag <strong>p</strong> stands for paragraph and we have been using this tag for the texts above.<br> 
+                In the text we can make use of the tags <strong>b and i</strong> that are use to 
+                make the text <b>bold</b> or <i>italic</i> respectively. we can also use the tags  <strong>sub and sup</strong> to<br>
+                show subscript or superscript characters like the 2 in H<sub>2</sub>O or when we raise a number to the square like 10 <sup>2</sup>.<br>
+                
+                <br>
+                When we are writing a paragraph in html and need to jump to an other line we can use the <strong>br</strong> or <strong>hr</strong> tags but if we use 
+                <strong >hr</strong> this will draw a line<br>
+                to divide the themes, if we try to use just the enter  this won't work because when the browser comes across two or more spaces it only display one. <br>
+                
+                <br>
+                There is an other way to make the text display in bold and this is by using <strong>the strong tag</strong>, but it's principal function is to show that
+                whatever is <br> 
+                in the tag is very important.The same way that there is another way to make the text display in bold there is an other for italic, 
+                this is by using <br> 
+                the em tag that stands for emphasis and should be used to make <em> emphasis </em>that subtly changes the meaning of a sentence. 
+                
+            </p>
+
+            <h4>Quotations</h4>
+            <blockquote>
+            <p>The blockquote element is used for longer quotes that take up an entire paragraph. </p>
+            </blockquote>
+            <p>For shoter quotes we use the <strong>q tag</strong> like this <q>Some people talk to animals. Not many listen though. That's the problem.</q></p>
+
+            <h4>Abbreviations and acronyms</h4>
+            <p>In HTML we can use an abbreviation or an acronym whith the <strong> abbr and acronym</strong> tags, these must have the property title to specify the full term <br>
+                like <abbr title="Professor">Prof</abbr> and <acronym title="National Aeronautics and Space
+                Administration">NASA</acronym>
+            </p>
+
+            
+
+            <p>Using the tag <strong>del</strong> <del>the text will apear like this</del>, if we use the tag <strong>ins</strong> <ins>the text will apear like this</ins></p>
+            <!--The <ins> element can be used to show content that has been inserted into a document, while the <del> element can show text that has been deleted from it-->
+        </article>
+        
+
+        <hr>
+
+        <article id="chapter3">
+            <h2>Lists</h2>
+
+            <p>In HTML we have 3 types of lists, numbered, bullet and definition, all these 3 can be nested. An example of a bullet list is the one at the top<br>
+                of this page, a numbered list can be like the following:
+            </p>
+
+            <ol>
+                <li>option 1<br>
+                    <ol reversed>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ol>
+                </li>
+                <li>option 2</li>
+                <li>option 3</li>
+            </ol>
+
+            <p>The numbers in this list can be inverted if we use the propperty <strong>reversed</strong> </p>
+            
+            <p>A definition list can be like the next one:</p>
+
+            <dl>
+                <dt><b>dt</b></dt>
+                <dd>The term being defined</dd>
+                <dt><b>dd</b></dt>
+                <dd>The definition of the respective dt</dd>
+            </dl>
+        </article>
+
+        <hr>
+
+        <article id="chapter4">
+            <h2>Links</h2>
+
+            <p>Links are the defining feature of the web because with them we move from one web to an other</p>
+
+            <p>links are created using the <strong>a tag </strong>and this tag has the next structure:<br>
+                <blockquote>
+                    &lt;a href="the page the link takes you to"&gt;clickable text for the user&lt;/a&gt;
+                </blockquote>
+                
+                A valid example is:
+
+                <blockquote>
+                    &lt;a href="http://www.google.com"&gt;search in google&lt;/a&gt;
+                </blockquote>
+                
+                URL stands for Uniform Resource  Locator. This is the web address that you see or type in the browser, when you link to a different website, <br>
+                the value of the href will be the full web address and this is know as an absolute URL, an example is the one of google that we already see.
+            </p>
+
+            <h3>Directory</h3>
+            <p>Folders in websites are referred to as directories and is a good idea to organize the code by placing the pages into different folders.<br>
+                The  top level folder is know as root and contains the home page of the site, this page is called index, any folder inside the root is know as a child<br>
+                and any folder in a child of root is a grandchild of root.<br>
+                <br>
+                Relative URLs is linking the page with your own website, there are 5  types of relative urls that are:<br>
+                <table border="1">
+                    <thead>
+                        <th >Type</th>
+                        <th >Example</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Same folder</td>
+                            <td>&lt;a href="examples.html"&gt;Examples&lt;/a&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>child folder</td>
+                            <td>&lt;a href="childFolder/examples.html"&gt;Examples&lt;/a&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>Grandchild folder</td>
+                            <td>&lt;a href="CFolder/GrandChild/examples.html"&gt;Examples&lt;/a&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>Parent folder</td>
+                            <td>&lt;a href="../examples.html"&gt;Examples&lt;/a&gt;</td>
+                        </tr>
+
+                        <tr>
+                            <td>Grandparent folder</td>
+                            <td>&lt;a href="../../examples.html"&gt;Examples&lt;/a&gt;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </p>
+
+            <p>We can make a link to prepare an email to a specific email address by using the next structure<br>
+                &lt;a href="mailto:name@whatever.com"&gt;clickable text&lt;/a&gt; this will look like this:
+            </p>
+            <a class="link" href="mailto:name@whatever.com">clickable text</a>
+
+            <p>To open a link in a new tab we must add the attribute target and give it the value of "_blank"</p>
+            <a class="link" href="http://www.google.com" target="_blank">google</a>
+            
+        </article>
+        <hr>
+        <article id="chapter5">
+            <H2>Images</H2>
+            <p>
+                The tag img is use to add images in the webpages, this tag is a inline element so it can be implemented in <br>
+                a line like this, <img src="images/dices-small.png"  alt="a group of dices" title="dices" height="70" width="100" />
+                To include an image in a site we use the &lt;img&gt; tag we must use the attribute src to indicate where is the image<br>
+                and which one we'll implement. We can make use of the tag figure but this element is a block elemnt so it won't show in the same line
+                <!--the  alt property is to give a description if you can't see the image
+                    the title property is to show a title of the image when the cursor is on top of the image
+                -->
+                <div>
+                <figure>
+                        <img class="borderimg" src="images/dices.png"  alt="a group of dices" title="dices" />
+                        
+                        <figcaption>this image show a group of dices</figcaption>
+                </figure>
+                </div>
+                The figcaption element is use to give a caption of the image and before this element there was no way to conect a img to a caption
+            </p>
+        </article>
+        <hr>
+        <article id="chapter6">
+            <h2>Tables</h2>
+            <p> tables are created by using the &lt;table&gt; tag and the content is written row by row, between the opening and closing tags of table <br>
+            we will have the <strong>tr</strong> tags that represent the rows of the table, and the <strong>td</strong> tags that are the cells. There is also the  <strong>th</strong> tags that work<br>
+            the same way as the td but the th are use to represent the heading of a column or a row. an example of this is the table of the directory types above.</p>
+
+            <p>
+                For Long tables there are 3 tags that will help, these are: 
+                <ul>
+                    <li><strong >thead</strong> that is use for the headings of the tables</li>
+                    <li><strong >tbody</strong> all the body of the table must be inside this element</li>
+                    <li><strong >tfoot</strong> the last part of the table and often use for results</li>
+                </ul> 
+
+                <table class="table1">
+                    <thead class="tabletitle">
+                        <tr>
+                            <th>Date</th>
+                            <th>Income</th>
+                            <th>Expenditure</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1 January</th>
+                            <td>250</td>
+                            <td>36</td>
+                        </tr>
+                        <tr>
+                            <th>2 January</th>
+                            <td>350</td>
+                            <td>48</td>
+                        </tr>
+                        <tr>
+                            <th>3 January</th>
+                            <td>100</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Totals</th>
+                            <td>700</td>
+                            <td>104</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </p>
+        </article>
+        <hr>
+        <article id="chapter7">
+            <h2>Forms</h2>
+            <h3>Form controls</h3>
+            <p>
+                To receive information from the user we can use the input, text areas, radio buttons, checkboxes, drop-down boxes, buttons and even we can <br>
+                receive a file letting the user upload a file, examples of this are the followings.
+            </p>
+            <!--in the form tag we can use the method to get or give information 
+                get is for short forms or when you just receive info from a server
+                post is for allow the user upload a file, is a long form, contains passwords or modify info in a db
+            -->
+            <form > <!--action="url"      method get and post-->
+                <fieldset>
+
+                    <legend>Form</legend>
+
+                    <p>user <input type="text" maxlength="15" size="35" placeholder="name" required="required" > 
+                    password <input type="password" minlength="7" required="required">
+                    
+                    </p>
+
+                    <label>Age: <input type="number" name="age" novalidate required="required"></label>
+                    <input id="female" type="radio" name="gender" value="f">
+                    <label for="female">female</label>
+                    <label for="male">male</label>
+                    <input id="male" type="radio" name="gender" value="m">
+                    <br>
+
+                    <textarea cols="50" rows="5" placeholder="your comments ..."></textarea><br>
+
+                    <p><input type="radio" name="genre" value="rock">Rock</p>
+                    
+                    <p><input type="radio" name="genre" value="jazz">Jazz</p>
+                    <p>
+                        <input type="checkbox" name="clubs" value="football" checked="checked">football
+                        <input type="checkbox" name="clubs" value="music">music
+                    </p>
+
+                    <select name="devices" multiple="multiple" size="2" >
+                            <option value="aaa">aaa</option>
+                            <option value="bbb">bbb</option>
+                            <option value="ccc">ccc</option>
+                            <option value="ccc">ddddd</option>
+                            <option value="ccc">eeeeeee</option>
+                    </select>
+
+                    <input type="range">
+
+                    <p>
+                        <input type="file" name="file"> 
+                        <input type="submit" value="upload"><!--submit input is to send a form to the server, this don't need a name-->
+                        <input class="imgbutton" type="image" src="images/submit.png" width="100" height="30" align="top">
+                        <button>normal button <img src="images/submit.png" width="10" height="10"></button>
+
+                    </p>
+               
+                </fieldset>
+
+            </form>
+<!--  -->
+        </article>
+        <hr>
+        <article class="chap" id="chapter8">
+            <h2>Markup</h2>
+            <p>The id attribute is used to uniquely identify an element from the others in the same page.</p>
+            <p>The class attribute can also be carried by any element and its good to identify a grup of elements</p>
+
+            <p>We can group different types of elements in a div element this will act like a box and let you manage the elements as a block</p>
+
+            <iframe width="450" height="350" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCUjZR0n9ERQIZw9skH8VjtOtmTV5mog64
+            &q=Space+Needle,Seattle+WA" ></iframe>
+
+            <p> The iframe can be seen as a window where you can see another page, the content can be any html page.
+                <br>
+                <br>
+                There is an element call meta (&lt;meta&gt;) that is on the head of the page, this information is not visible to the user but it can contain <br>
+                information about your page such as who made it, keywords or a description of the page.
+            </p> 
+
+        </article>
+        <hr>
+        <article id="chapter9">
+            <h2>Video & audio</h2>
+             <p>
+                In HTML we can add videos to give "live" to the page 
+            </p>
+
+            <video class="bordervid" poster="images/dices.png" width="400" height="300" preload="auto" controls loop autoplay="autoplay">
+                
+                <source src="videos/videoplayback.mp4" type='video/mp4;codecs=avc1.42E01E, mp4a.40.2"'/>
+                <source src="videos/videoplayback.webm" type='video/webm;codecs="vp8, vorbis"' />
+                <p>A father discovers something about his daughter</p>
+            </video>
+            <!--preload make the browser to load the video until the user press play
+                if the value is auto the page load the video when the page loads
+            -->
+            <!--controls tell the browser to use its own controls-->
+            <!--loop makes the video to start again once its finish-->
+
+            <p>
+                The same way we can add a video to a web page we can also add an audio, but is becoming less common unless the site is for this porpuse
+            </p>
+            <audio src="audio/Aplausos.mp3" controls>
+                <p>This browser does not support our audio format.</p>
+            </audio>
+        </article>
+           
+        <hr>
+        
+
+    </body>
+</html>
